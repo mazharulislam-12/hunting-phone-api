@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,11 +15,22 @@
     </header>
 
 
-    <main>
+    <main class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto mt-8">
+
+        <!-- search result -->
+        <div class="bg-gray-100 p-4 m-4 rounded-lg shadow-lg flex justify-center gap-4">
+            <input id="search-field" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch()" class="btn btn-accent">Search</button>
+        </div>
+
         <section>
             <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-2">
 
-
+            </div>
+            
+            <!-- show all btn -->
+            <div id="show-all-container" class="hidden">
+                <button class="btn btn-accent">Show All</button>
             </div>
         </section>
     </main>
