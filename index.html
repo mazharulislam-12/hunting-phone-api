@@ -7,10 +7,43 @@
     <!-- link tailwind and daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .ImagePossitin{
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #fff;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
+    <header class="max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg mx-auto mt-8">
+        <!-- navbar start -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <a class="btn btn-ghost normal-case text-xl">Hot Gadgets</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              
+            </div>
+            <div class="navbar-end">
+              <a class="btn text-center bg-[#DC3545] rounded-full mt-3 px-8 py-2 text-white">Sign Up</a>
+            </div>
+          </div>
+        <!-- navbar end -->
+
+        <div class="text-center">
+            <h1 class="text-3xl font-bold">Apple Iphone 13 Pro Max</h1>
+            <p class="text-[#706F6F] my-3">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humou.</p>
+            <button class="btn text-center bg-[#DC3545] rounded-full mt-3 px-8 py-2 text-white mb-3">BUy Now</button>
+        </div>
+
+        <!-- banner start -->
+        <div class="hero min-h-screen items-center ImagePossitin rounded-2xl" style="background-image: url(image/iphone-791450_1280.jpg); ">
+            <div class="hero-overlay bg-sky-500/[.06]"></div>
+          </div>
+        <!-- banner end -->
 
     </header>
 
@@ -54,13 +87,12 @@
                     </dialog>
         <!-- show details modal end -->
 
-
-
-
     </main>
 
 
-
+<!-- footer section start -->
+    
+<!-- footer section end -->
     
 
 
